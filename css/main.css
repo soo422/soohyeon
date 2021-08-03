@@ -1,0 +1,193 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Hahmlet&family=Lato&family=Montserrat:wght@700&display=swap');  
+
+/*  
+    font-family: 'Hahmlet', serif;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+body{
+    background: #D0B898;
+    color:#171717;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name p{    
+    width: 150px;
+    height: 150px;
+    text-indent: -9999em;
+    background: url(../img/soo.png) no-repeat center;
+}
+header .menu{
+    z-index: 10;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.menu ul li a{
+    color: #ededed;
+}
+.menu ul li a:hover{
+    color:#548561;
+}
+#fp-nav ul li{
+    margin:8px 0 !important;
+    width:12px ! important;
+    height:12px !important;
+}
+#fp-nav ul li a{
+    border-radius:50%;
+    border:2px solid #879099;
+    box-sizing: border-box;
+}
+#fp-nav ul li a.active{
+    background: #D4F0FF;
+    border-color:#D4F0FF;
+}
+
+#fp-nav ul li span{
+    display: none;
+}
+
+
+/* about */
+.about{
+    position: relative;
+}
+.about p{
+    position: absolute;
+    left: 80px;
+    font-size: 30px;
+    color: #ededed;
+    font-weight: bold;
+}
+.about .fixedword{
+    top: 120px; 
+    font-family: 'Gothic A1', sans-serif;
+}
+.about .typing-name{
+    top: 180px; 
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.about img{
+    width: 70%; 
+    border-radius: 20px;
+}
+.about .profile{
+    position: absolute;
+    right: -90px; bottom: 50%;
+    transform: translateY(-50%);
+    font-family: 'Gothic A1', sans-serif;
+}
+.about .profile li{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Hahmlet', serif;
+    
+}
+.about .bounce span{
+    position: absolute;
+    left: 50%; bottom: 23%;
+    transform: translateX(-50%);
+    width: 30px; height: 50px;
+    border: solid 2px #ededed;
+    border-radius: 50px;
+}
+.about .bounce span:before{
+    position: absolute;
+    top: 10px; left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 6px; height: 6px;
+    background-color: #ededed;
+    border-radius: 100%;   
+    animation: bounce 1s infinite;
+}
+@keyframes bounce{
+    0% {
+        top: 10px;
+        animation-timing-function: ease-in;
+      }
+      35% {
+        top: 2rem;
+        animation-timing-function: ease-out;
+        opacity: 0;
+      }
+      90% {
+        top: 10px;
+      }
+      100% {
+        top: 10px;
+      }
+}
+/* skill */
+.skill .icon{
+    margin-top: 100px;
+}
+.skill .icon ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.skill .icon h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.skill .icon figcaption{
+    margin-top: 30px;
+    width: 190px;
+    word-break: break-word;
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+}
+/* portpolio */
+
+.portfolio ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.portfolio ul li{
+    font-family: 'Lato', sans-serif;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.portfolio ul li.active{
+    color: #ededed;
+    background: #999;
+    padding:2px 5px;
+    box-sizing: border-box;
+}
+.my-portfolio{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.my-portfolio figcaption{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin-top: 30px;
+    text-align: center;
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박수현 포트폴리오입니다.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.fullpage.extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+    <header class="container">
+       <div class="name">
+           <p>soo</p>
+       </div>
+       <nav class="menu">
+            <ul>
+                <li data-anchor="about"><a href="#about">about</a></li>
+                <li data-anchor="profile"><a href="#skill">skill</a></li>
+                <li data-anchor="portfolio"><a href="#portfolio">portfolio</a></li>
+            </ul>
+       </nav> 
+    </header>
+    <div id="fullpage">
+        <section class="about container section">
+            <h2 class="hidden">about</h2>
+            <img src="img/about.jpg" alt="">
+            <div>
+                <p class="fixedword">발전하고 노력하는</p>
+                <p class="typing-name">web publisher</p>
+            </div>
+            <ul class="profile">
+                <li>박수현/1992.04.22</li>
+                <li>서울시 동대문구 거주</li>
+                <li>suhyun422@naver.com</li>
+                <li>UI/UX 반응형디자인 웹퍼블리셔&프론트엔드 <br>실무전문과정 수료
+                </li>
+            </ul>
+            <div class="bounce">
+                <span></span>
+            </div>
+        </section>
+        <section class="skill container section">
+            <h2 class="hidden">profile</h2>
+            <div class="icon">
+               <ul>
+                   <li>
+                        <h3>html</h3>
+                       <figure>
+                            <img src="img/html.png" alt="html">
+                            <figcaption>웹표준 검사 이상없이 작성가능</figcaption>
+                       </figure>
+                   </li>
+                   <li>
+                       <h3>css</h3>
+                       <figure>
+                            <img src="img/css.png" alt="css">
+                            <figcaption>미디어쿼리를 사용하여 <br> 반응형 디자인 가능</figcaption>
+                       </figure>
+                       
+                   </li>
+                   <li>
+                       <h3>javascript</h3>
+                       <figure>
+                            <img src="img/js.png" alt="js">
+                            <figcaption>바닐라 자바스크립트로 <br>슬라이드 직접 작성 가능</figcaption>
+                       </figure>
+                   </li>
+                   <li>
+                       <h3>jquery</h3>
+                       <figure>
+                            <img src="img/jquery.png" alt="jquery">
+                            <figcaption>다양한 라이브러리를 <br>사용하여 코딩 가능</figcaption> 
+                       </figure>
+                   </li>
+                   <li>
+                       <h3>photoshop</h3>
+                       <figure>
+                           <img src="img/psd.png" alt="psd">
+                           <figcaption>툴을 사용해서 디자인 가능</figcaption>
+                       </figure>
+                   </li>
+               </ul>
+            </div>
+
+        </section>
+        <section class="portfolio container section contrast">
+            <h2 class="hidden">portfolio</h2>
+            <ul>
+                <li class="list active" data-filter="All">All</li>
+                <li class="list" data-filter="Pc">Pc</li>
+                <li class="list" data-filter="Responsive">Responsive</li>
+                <li class="list" data-filter="Mobile">Mobile</li>
+            </ul>
+            <div class="my-portfolio">
+                <figure class="project Pc">
+                    <a href="http://havesoo.dothome.co.kr/daehan/" target='_blank'><img src="img/daehan.png" alt="portfolio1"></a> 
+                    <figcaption>대한극장 리뉴얼</figcaption>
+                </figure>    
+                <figure class="project Pc Responsive">
+                    <a href="http://havesoo.dothome.co.kr/hanse/" target='_blank'><img src="img/hanse.png" alt="portfolio2"></a> 
+                    <figcaption>한세 실업 리뉴얼</figcaption>
+                </figure>
+                <figure class="project Mobile">
+                    <a href="http://havesoo.dothome.co.kr/aladin/phone.html" target='_blank'><img src="img/aladin.png" alt="portfolio3"></a> 
+                    <figcaption>알라딘 리뉴얼</figcaption>
+                </figure>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
